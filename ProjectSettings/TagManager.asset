@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Sushi
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -11,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -44,7 +46,7 @@ TagManager:
   - name: BackGround
     uniqueID: 349721039
     locked: 0
-  - name: Earth
+  - name: Sushi
     uniqueID: 1620852391
     locked: 0
   - name: Enemy
@@ -52,9 +54,6 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3636254953
-    locked: 0
-  - name: Bullet
-    uniqueID: 2480346813
     locked: 0
   - name: UI
     uniqueID: 296195089
