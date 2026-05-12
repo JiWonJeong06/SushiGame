@@ -52,6 +52,8 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.1
 [sourceFiles]
 Assets/Scripts/
  AudioManager.cs
+ Boot.cs
+ Bullet.cs
  DialogueManager.cs
  Enemy.cs
  FollowCamera.cs

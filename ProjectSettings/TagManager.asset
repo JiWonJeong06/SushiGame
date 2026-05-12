@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Sushi
   - Enemy
+  - Bullet
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -60,6 +62,9 @@ TagManager:
     locked: 0
   - name: Text
     uniqueID: 3772467247
+    locked: 0
+  - name: Closing
+    uniqueID: 760818431
     locked: 0
   m_RenderingLayers:
   - Default

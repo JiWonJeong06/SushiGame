@@ -6,6 +6,10 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 2f;
     public float moveDistance = 3f;
 
+    [Header("체력")]
+    public int maxHp = 3;
+    private int currentHp;
+
     private Vector2 startPosition;
     private int direction = 1;
 
@@ -13,6 +17,7 @@ public class Enemy : MonoBehaviour
     {
         startPosition = transform.position;
         gameObject.tag = "Enemy";
+        currentHp = maxHp;
     }
 
     void Update()
@@ -30,7 +35,19 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Is Trigger 대신 OnCollisionEnter2D 사용
+    public void TakeDamage()
+    {
+        currentHp--;
+
+        if (currentHp <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
